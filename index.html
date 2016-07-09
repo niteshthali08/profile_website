@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Nitesh Thali's port-folio website">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=320, height=device-height, target-densitydpi=medium-dpi" />
+
+
+    <title>Nitesh Thali</title>
+    <script src="js/jquery.js"></script>
+    <!-- Note jquery js should be loaded before boostrap otherwise navbar mobile button wont work -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src= "js/handlebars-v3.0.3.js"></script>
+    <script src="js/typed.js"></script>
+    <script src="js/ProgressBar.js"></script>
+    <script src="js/asu_courses.js"></script>
+    <script src="js/gec_courses.js"></script>
+    <script src="js/experience.js"></script>
+    <script src="js/my_profile.js"></script>
+    
+
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/profile.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" data-offset="10">
+   
+    <nav class="navbar navbar-inverse navbar-fixed-top" role = "navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="sr-only">Toggle navigation</span> <!-- for top -->
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand scroll-top" href="#">Nitesh Thali</a>
+
+            </div>
+            <div>
+                <div class="main-nav collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <!-- data-toggle="collapse" data-target=".navbar-collapse.in" helps in collapsing menu bar on click in mobile -->
+                        <li class = "active"> <a data-toggle="collapse" data-target=".navbar-collapse.in" id = "#intro" class="scroll-link">Home</a> </li>
+                        <li> <a data-toggle="collapse" data-target=".navbar-collapse.in" id = "#academics" class="scroll-link">Education</a> </li>
+                        <li> <a data-toggle="collapse" data-target=".navbar-collapse.in" id ="#experience" class="scroll-link">Experience</a> </li>
+                        <li> <a data-toggle="collapse" data-target=".navbar-collapse.in" id = "#projects" class="scroll-link">Projects</a> </li>
+                        <li> <a data-toggle="collapse" data-target=".navbar-collapse.in"  id ="#skills" class="scroll-link">Skills</a> </li>
+                        <li> <a data-toggle="collapse" data-target=".navbar-collapse.in" id = "#contact_me" class="scroll-link">Contact-Me</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div> <!-- enod of container -->
+    </nav>
+ 
+    <div id="intro"  class="container intro-section">
+        <div class = "row">
+            <div  id = "alert_box" class="alert alert-dismissible alert-warning">
+                  <button type="button" class="close" data-dismiss="alert">&times;</button>
+                  <p> Warning! You are entering a highly activated Sci-Tech area. If something strikes then please <a id="contact_link" class="alert-link nav-text">contact</a> me.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class = "col-lg-12">
+                <div id = "profile_pic" class="img-responsive slide_profile_pic slide_profile_pic">
+                    <img class='img-circle' src="images/my_pic.jpg" alt="my_pic" width="200" height="200" />
+                    
+                    <div id="intro_text" class = "slide_intro_text">        
+                        <h1 > Hello, hola, नमस्ते !</h1>
+                        <span> I am Nitesh Thali </span> 
+                        <span class="typed_text"> </span>
+                        <span class = "typed-cursor"></span>
+                        <h4> Highly skilled, technically sound professional looking for full time opportunity in the field of Software Development.</h4>
+                    </div>
+                </div>           
+                
+            </div>
+        </div>
+    </div>
+
+   
+    <div id="academics" class="container section2">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Education </h2>
+                <blockquote>
+                    <p>Education is the most powerful weapon which you can use to change the world.</p>
+                    <small>Nelson Mandela</small>
+                </blockquote>
+               <div class="img-responsive">
+                     <p class = "success_msg">... and I have it <img class='img-circle' src="images/green_check.jpg" alt="logo" width="15" height="15"> </p> 
+              </div>
+            </div>
+        </div>
+        <div class="row" >
+            <div class="col-md-4 col-sm-4" style = "padding:0px;"> 
+                <div id = "gec_courses" style = "padding:15px;" class = "college" data-toggle="modal" data-target="#myModal"> 
+                    <p> 
+                        <b>Bachelor of Engineering</b><br>
+                        Computer Engineering <br>
+                        Goa College of Engineering <br >
+                        Goa University, India <br>
+                        May 2012 <br> 
+                        First Class With Distinction - 72.6% <br>
+                        <img  class="center-block img-responsive" style = "margin-top:5%;" src="images/GEC_logo.png" alt = "GEC_LOGO" width="115" height="115" />
+                    </p>
+                </div>             
+            </div>    
+            <div class="col-md-4 col-sm-4" style = "padding:0px;">  
+                 <div id = "asu_courses" style = "padding:15px;" class = "college" data-toggle="modal" data-target="#myModal"> 
+                     <p> 
+                        <b>Master of Scinece </b><br>
+                        Computer Software Engineering <br>
+                        Ira. Fulton School of Engineering <br>
+                        Arizona State University <br >
+                        Tempe AZ <br>
+                        Dec 2016 <br> 
+                        Current GPA - 4.0/4.0 <br>
+                        <img class="center-block img-responsive" style = "margin-top:5%;" src="images/ASU_logo.png" alt = "ASU LOGO" width="300" height="300" />
+                    </p>  
+                </div>                         
+            </div>
+        </div>
+    </div>
+    <!-- academic div ends here -->
+    <!-- Modal for education -->
+    
+    <div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div id= "template_content"> 
+        </div>
+    </div>
+
+         <!-- Start of template for academics -->
+        <script id="academics_template" type="text/x-handlebars-template">
+                <div class="modal-dialog" role="document" >   
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h3 class="modal-title" id="myModalLabel">{{ title }}</h3>
+                            {{#each courses}}
+                                <p> {{this}} </p>
+                            {{/each}}
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>    
+        </script>
+        <!-- Start of template for academics -->
+
+    <div id="experience" class="container section1">
+    </div> 
+    <!-- end of experience div container -->
+    <script id="experience_setup_template" type="text/x-handlebars-template">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Experience </h2>
+                <blockquote>
+                    <p>Knowledge gained through experience is far superior and many times more useful than bookish knowledge. </p>
+                    <small>Mahatma Gandhi</small>
+                </blockquote>
+            </div>
+        
+            <div class="img-responsive col-lg-12">
+                <p class = "success_msg">... I got it. <img class='img-circle' src="images/green_check.jpg" alt="logo" width="15" height="15"> </p> 
+            </div>        
+        </div>
+
+        <div class="row">
+             {{#each company}}   
+            <div class="col-md-3 col-sm-3 company" id = {{id}} style= "padding: 15px;" data-toggle="modal" data-target="#myModal">
+                <div>
+                    <p> 
+                        <b> {{designation}} </b><br>
+                        {{ company_name }} <br>
+                        {{date}}
+                        <img  class="center-block img-responsive" style = "margin-top: 5%;"src={{company_logo}} alt = "SOLS_LOGO" width="200" height="54" />
+                    </p>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </script>
+
+     <script id="experience_template" type="text/x-handlebars-template">
+        <div class="modal-dialog modal-lg big-modal" role="document" >       
+            <div class="modal-content">
+                <div class = "container">
+                    <div class = "row">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <div class = "col-lg-10 col-lg-offset-1 col-xs-10 col-xs-offset-2">
+                             <div class="modal-body">
+                        
+                                <h3 class="modal-title"> {{designation}} </h3>
+                                <img class="modal-image center-block img-responsive" src = {{ img_url }} height="500" width="500"/>
+                                <p> {{{ description }}} </p>
+                            </div> 
+                        </div>
+                    </div> 
+                </div>             
+                <div class="m-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>    
+    </script>
+        <!-- End of template for experience -->
+    <!-- Start of div for projects -->
+    <div id="projects" class="container section2">
+    </div>
+           
+    <script id="proj_setup_template" type="text/x-handlebars-template">    
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Projects </h2>
+                <blockquote>
+                    <p>It does not take much strength to do things, but it requires a great deal of strength to decide what to do. </p>
+                    <small>Elbert Hubbard</small>
+                </blockquote>
+                 <div class="img-responsive col-lg-12">
+                    <p class = "success_msg">... have done lots of it.<img class='img-circle' src="images/green_check.jpg" alt="logo" width="15" height="15"> </p> 
+                </div> 
+                
+            </div>
+        </div>
+        <div class="row" >
+            {{#each project}}    
+                <div class="col-md-4 col-sm-4 project_divs" data-toggle="modal" data-target="#myModal">
+                    <div id = {{id}}>
+                        <div class = "moving_div" >
+                            <div class = "text-mv">
+                                <i>{{title}} </i>
+                                <p><img src = "images/projects/search_ico.ico" height="40" width="40"> </p>
+                            </div>       
+                        </div>  
+                    </div>       
+                </div>
+            {{/each}} 
+        </div>
+    </script>
+   <!-- <div class="modal-dialog modal-lg big-modal" role="document" >   -->
+    <script id="projects_template" type="text/x-handlebars-template"> 
+        <div class="modal-dialog modal-lg big-modal" role="document" >       
+            <div class="modal-content">
+                <div class = "container">
+                    <div class = "row">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <div class = "col-lg-8 col-lg-offset-2 col-sm-12 col-xs-12">
+                            <div class="modal-body">   
+                                <h3 class="modal-title" >{{title}}</h3>
+                                <h5 class="modal-title">{{date}}</h5>
+                                <p> {{{description}}} </p>
+                            </div>
+                        </div>
+                    </div>
+                 </div>        
+                <div class="m-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>    
+            </div>
+        </div>    
+    </script>
+    <!-- End of template for project -->
+
+    <div id="skills" class="container section1">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2> Skills</h2>
+                <blockquote>
+                    <p>It is possible to fly without motors, but not without knowledge and skill.</p>
+                    <small> Jim Rohn </small>
+                </blockquote>
+                <div class="img-responsive col-lg-12">
+                    <p class = "success_msg">... and I am all set to fly.<img class='img-circle' src="images/green_check.jpg" alt="logo" width="15" height="15"> </p> 
+                </div> 
+                
+            </div>
+            <div id = "skills_container">
+
+            </div>
+
+        </div>
+    </div>
+    <!-- template for skills -->
+    <script id="skills_template" type="text/x-handlebars-template">
+        {{#each skill}} 
+            <div class="col-md-2 col-sm-4 col-xs-6 skills_div">
+               <div class= "skills" id = {{id}}> </div>
+               <p>{{name}} </p>
+            </div>   
+        {{/each}}    
+    </script>
+
+    <div class="container section2" id="contact_me">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Contact Me </h2>
+                <blockquote>
+                    <!-- <p>It's upto you to take that one step ahead to build something cool instead of repenting it later! </p> -->
+                    <p> Never give up on something you really want. It's easy to take first step but more difficult to regret later</p>
+                    <small>Nitesh Thali</small>
+                </blockquote>
+            </div>
+            <div class="col-lg-12">
+                <div class = "contact_method">
+                    <span>
+                        <p> Well, I am looking for interesting and challenging role in Software Development pertaininng to areas of developing Distributed Systems, Backend systems along with building Data Analytics and Data Mining applications. If you find me interesting then let's talk to find out more about the opportunities.
+                        <p>Call me on: 480-494-9802
+                        <img class = "img-circle" src="images/footer/call_me.gif" height="25" width="25" /> </p>
+                        <p><b> OR </b> </p>
+                        <p>Email me at: niteshthali08@gmail.com
+                        <img class = "img-circle" src="images/footer/mail.gif" height="25" width="25" /></p><br>
+                        If you want my formal resume, then get it from <a target="_blank" href="http://www.public.asu.edu/~nthali/Nitesh_Thali_Resume.pdf" > <i>here</i> </a>
+                        <br>
+                        <br>
+                    </span>
+                </div>      
+            </div>
+            <div class="col-lg-12">
+                <div class="social_block">
+                    <p> <i> Please connect with me on following social media </i> </p>
+                    <ul class = "social list-inline img-responsive">
+
+                        <li> <a target="_blank" href="https://www.linkedin.com/in/niteshthali" > <img  class = "img-circle" src="images/footer/linkedin.png" height="50" width="50" /> </a> </li>
+
+                        <li> <a target="_blank" href="https://github.com/niteshthali08" > <img  class = "img-circle" src="images/footer/git.png" height="50" width="50" /> </a> </li>
+
+                        <li><a target="_blank" href = "https://www.facebook.com/nitish.thali" > <img class = "img-circle" src = "images/footer/facebook.gif" height="50" width="50" />  </a>  </li>
+
+                        <li> <a target="_blank" href= "https://plus.google.com/u/0/100345145760712760570/posts"> <img  class = "img-circle" src="images/footer/google.png" height="50" width="50" />  </a>  </li>
+
+                         <li> <a target="_blank" href= "https://twitter.com/Nitesh_Thali" > <img class = "img-circle" src = "images/footer/twitter.png" height="50" width="50" />  </a>  </li>
+                         
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container section3">
+        <div class="row">
+            <div class="col-lg-12 col-sm-12 col-xs-12">
+                <div class = "site_footer">
+                    <div class ="footer_content"> 
+                         © Nitesh Thali - 2016
+                         <p>
+                            This website is built by me with ♡ using HTML5,  <a href="https://jquery.com/" target="_blank">jQuery</a>,  <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>,  <a href="http://handlebarsjs.com/" target="_blank" >Handlebars</a>,  <a href = "https://kimmobrunfeldt.github.io/progressbar.js/" target="_blank">ProgressBar.js</a> and awesome  <a href= "http://www.mattboldt.com/demos/typed-js/" target="_blank"> Typed.js </a>  
+                        </p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <script>
+  $(function(){
+      $(".typed_text").typed({
+       strings: [", a passionate programmer!", ", an aspiring data scientist!", ", a FOSS supporter!", ", a team player!", ", a music lover!", ", an avid bike rider!"],
+        typeSpeed: 50, 
+        backDelay: 500,
+        loop:true
+      });
+  });
+</script>
+
+</body>
+
+</html>
